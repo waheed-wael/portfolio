@@ -36,3 +36,7 @@ p.scroll-animation{
 .col-md-12.scroll-animation {
     padding-bottom: 30px;
 }
+
+.hero-section .hero-content > p{
+    max-width: 98% !important;
+}
