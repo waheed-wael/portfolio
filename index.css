@@ -20,3 +20,19 @@
 .btn{
     padding: 0px !important;
 }
+
+h1.scroll-animation{
+        width: 111vh;
+}
+
+p.scroll-animation{
+            max-width: 98%;
+    line-height: 35px;
+    font-size: 19px;
+}
+
+
+
+.col-md-12.scroll-animation {
+    padding-bottom: 30px;
+}
