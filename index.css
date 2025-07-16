@@ -26,7 +26,7 @@ h1.scroll-animation{
 }
 
 p.scroll-animation{
-            max-width: 98%;
+            max-width: 98% !important;
     line-height: 35px;
     font-size: 19px;
 }
