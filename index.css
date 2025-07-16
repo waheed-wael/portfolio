@@ -38,5 +38,5 @@ p.scroll-animation{
 }
 
 .hero-section .hero-content > p{
-       max-width: 757px !important;
+       max-width: auto !important;
 }
