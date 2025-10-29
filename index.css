@@ -6,11 +6,11 @@
     
 }
 
-/* .theme-btn i{
+ .theme-btn i{
     font-family: Inter, sans-serif;
     font-size: 24px;
     font-weight: 400;
-} */
+} 
 .cco{
     font-family: Inter, sans-serif;
     font-size: 24px;
@@ -21,9 +21,6 @@
     padding: 0px !important;
 }
 
-h1.scroll-animation{
-        width: 111vh;
-}
 
 
 
@@ -38,6 +35,15 @@ h1.scroll-animation{
     ;
 
     margin-bottom: -90px;
+}
+
+.hero-section .hero-content > p {
+    max-width: fit-content !important;
+
+}
+
+h1.scroll-animation {
+    width: max-content;
 }
 
 
@@ -59,5 +65,8 @@ a:hover {
 .portfolio-item h2{
     align-items: center;
     text-align: center;
+}
+h1.scroll-animation {
+    width: auto;
 }
   }
