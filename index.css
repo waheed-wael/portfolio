@@ -40,10 +40,9 @@ h1.scroll-animation {
   width: max-content;
 }
 
-a:hover {
-  color: #603835 !important;
-}
-
+.portfolio-item h2 a:hover{
+    color: white !important;
+} 
 .skills .skill .skill-inner {
   padding: 0 !important;
   height: 175px;
