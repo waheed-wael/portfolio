@@ -1,80 +1,90 @@
-.email{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.email {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
- .theme-btn i{
-    font-family: Inter, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-} 
-.cco{
-    font-family: Inter, sans-serif;
-    font-size: 24px;
-    font-weight: 400;
+.theme-btn i {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.cco {
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.btn{
-    padding: 0px !important;
+.btn {
+  padding: 0px !important;
 }
-
-
 
 .left-sidebar .social-profile {
-    gap: 8px;
-    margin-bottom: 44px !important;
+  gap: 8px;
+  margin-bottom: 44px !important;
 }
 
-
-
-
-
 .hero-section .hero-content .facts {
-   
-    margin-top: -169px !important
+  margin-top: -169px !important
     ;
 
-    margin-bottom: -90px;
+  margin-bottom: -90px;
 }
 
 .hero-section .hero-content > p {
-    max-width: fit-content !important;
-
+  max-width: fit-content !important;
 }
 
 h1.scroll-animation {
-    width: max-content;
+  width: max-content;
 }
-
 
 a:hover {
-    color: #603835 !important;
+  color: #603835 !important;
 }
 
+.skills .skill .skill-inner {
+  padding: 0 !important;
+  height: 175px;
+  margin: auto !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
 
-  @media (max-width: 768px) {
-
-.hero-section .hero-content .facts {
+.skills .skill .skill-inner img {
+    display: block;
    
+    margin: auto !important;
+}
+
+.skills .skill p {
+ 
+ 
+    margin-top: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section .hero-content .facts {
     margin-top: 0px !important
     ;
 
     margin-bottom: 0px;
-}
+  }
 
-.portfolio-item h2{
+  .portfolio-item h2 {
     align-items: center;
     text-align: center;
-}
-h1.scroll-animation {
+  }
+  h1.scroll-animation {
     width: auto;
-}
+  }
 
-.left-sidebar .social-profile {
+  .left-sidebar .social-profile {
     gap: 8px;
     margin-bottom: auto;
-}
   }
+}
