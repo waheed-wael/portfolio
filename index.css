@@ -1,3 +1,7 @@
+.portfolio-item.portfolio-full {
+    margin-bottom: 62px !important;
+}
+
 .email {
   text-align: center;
   display: flex;
@@ -87,3 +91,6 @@ h1.scroll-animation {
     margin-bottom: auto;
   }
 }
+
+
+
