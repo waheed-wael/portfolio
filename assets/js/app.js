@@ -204,6 +204,8 @@
         tl.to($(".proj-dev", prev), { xPercent: rtl ? 6 : -6, scale: 0.92, opacity: 0, duration: 0.5, ease: "power2.in" }, at)
           .to($$(".proj-info > *", prev), { y: -40, opacity: 0, duration: 0.35, stagger: 0.02, ease: "power2.in" }, at)
           .to($(".proj-bg", prev), { yPercent: -30, opacity: 0, duration: 0.45, ease: "power2.in" }, at)
+          .to($(".proj-glow", prev), { opacity: 0, scale: 0.85, duration: 0.5, ease: "power2.in" }, at)
+          .fromTo($(".proj-glow", cur), { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.8, ease: "power3.out" }, at + 0.2)
           .to(pr, { p: 1, duration: 0.7, ease: "power3.inOut", onUpdate: function () { wipe(cd, line, pr.p); } }, at + 0.1)
           .fromTo($(".laptop", cur), { xPercent: rtl ? -5 : 5, rotateY: rtl ? 8 : -8, transformPerspective: 1400 }, { xPercent: 0, rotateY: 0, duration: 0.75, ease: "power3.out" }, at + 0.1)
           .fromTo($(".phone", cur), { yPercent: 45, opacity: 0 }, { yPercent: 0, opacity: 1, duration: 0.55, ease: "power3.out" }, at + 0.38)
