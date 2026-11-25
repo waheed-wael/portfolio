@@ -14,13 +14,24 @@
     burger.setAttribute("aria-expanded", open ? "true" : "false");
     burger.setAttribute("aria-label", open ? burger.dataset.close : burger.dataset.open);
     nav.classList.toggle("open", open);
+    root.classList.toggle("menu-open", open);
     root.style.overflow = open ? "hidden" : "";
     if (lenis) open ? lenis.stop() : lenis.start();
     if (open) { var f = $("a", nav); f && f.focus(); }
   }
   burger.addEventListener("click", function () { setMenu(burger.getAttribute("aria-expanded") !== "true"); });
   nav.addEventListener("click", function (e) { if (e.target.closest("a") && nav.classList.contains("open")) setMenu(false); });
-  d.addEventListener("keydown", function (e) { if (e.key === "Escape" && nav.classList.contains("open")) { setMenu(false); burger.focus(); } });
+  d.addEventListener("keydown", function (e) {
+    if (!nav.classList.contains("open")) return;
+    if (e.key === "Escape") { setMenu(false); burger.focus(); return; }
+    if (e.key === "Tab") {
+      var f = [burger].concat([].slice.call(nav.querySelectorAll("a"))).filter(function (el) { return el.offsetParent !== null; });
+      var first = f[0], last = f[f.length - 1];
+      if (e.shiftKey && d.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
+  var scrim = $(".scrim"); scrim && scrim.addEventListener("click", function () { setMenu(false); });
 
   /* ---------- header: solid after hero top, hides on scroll down ---------- */
   var hd = $("#hd"), lastY = 0, ticking = false;
